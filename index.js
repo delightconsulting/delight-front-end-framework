@@ -29,8 +29,8 @@ var output = postcss([autoprefixer])
 fs.writeFile("css/delight.css", output, 'utf-8')
 
 // Using Sqwish for CSS
-// new compressor.minify({
-//   type: 'sqwish',
-//   fileIn: './css/delight.css',
-//   fileOut: './css/delight.min.css'
-// });
+new compressor.minify({
+  type: 'sqwish',
+  fileIn: './css/delight.css',
+  fileOut: './css/delight.min.css'
+});
