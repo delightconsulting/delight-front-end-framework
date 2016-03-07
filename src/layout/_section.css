@@ -1,0 +1,30 @@
+/* ==========================================================================
+   SECTIONS
+   ========================================================================== */
+/*
+	Use sections to arrange the page vertically
+*/
+
+.section {
+	background: white;
+	padding: var(--size-md) 0;
+}
+
+/* adds border between adjacent sections */
+.section + .section {
+	border-top: var(--border-width) solid var(--lightest-gray);
+}
+
+@media (--breakpoint-medium-and-up) {
+	.section {
+		padding: 48px 0;
+
+		&.is-medium {
+			padding: 120px 0;
+		}
+
+		&.is-large {
+			padding: 240px 0;
+		}
+	}
+}

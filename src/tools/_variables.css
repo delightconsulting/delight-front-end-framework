@@ -26,7 +26,7 @@
 
 	/* Grayscale */
 	--white: #FFFFFF;
-	--lighest-gray: #f5f7fa;
+	--lightest-gray: #f5f7fa;
 	--light-gray: #d3d6db;
 	--gray: #aeb1b5;
 	--dark-gray: #69707a;
@@ -38,12 +38,7 @@
 	--header-font: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
 	--monospace-font: "Source Code Pro", "Monaco", "Inconsolata", monospace;
 
-	/* Sizing
-		 8 is the magic number
-		 8,16,24,32,40,48,56,64,72
-		 Base font size of 16
-		 Baseline of 24 (16px/1.5)
-	*/
+	/* Sizing: Baseline is 24; */
 	--size-xs: 6px;
 	--size-sm: 12px;
 	--size-md: 24px;
@@ -51,6 +46,7 @@
 	--size-xl: 72px;
 
 	/* Dimensions */
+	--wrapper-width: 960px;
 	--column-gap: 24px;
 	--header-height: 72px;
 

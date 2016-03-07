@@ -1,0 +1,50 @@
+/* ==========================================================================
+   FLEXBOX-BASED GRID
+   ========================================================================== */
+/*
+	Use this grid to arrange items horizontally
+
+	On mobile, all .column elements are full-width.
+	Flexbox is activated on tablet screens and larger
+*/
+
+.column {
+	flex: 1;
+	padding: var(--size-sm);
+}
+
+@media (--breakpoint-medium-and-up) {
+	/* activate flexbox grid on tablet and larger */
+	.columns {
+		display: flex;
+	}
+	/* grid modifiers */
+	.columns.is-centered {
+		justify-content: center;
+	}
+	.columns.is-multiline {
+		flex-wrap: wrap;
+	}
+	.columns.is-vcentered {
+		align-items: center;
+	}
+
+	.column {
+		padding: var(--size-md);
+	}
+	/* column sizing */
+	.column.is-half {
+		width: 50%;
+		flex: none;
+	}
+
+	.column.is-third {
+		width: 33.3333%;
+		flex: none;
+	}
+
+	.column.is-quarter {
+		width: 25%;
+		flex: none;
+	}
+}

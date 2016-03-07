@@ -1,0 +1,31 @@
+.is-no-padding {
+	padding: 0 !important;
+}
+	.is-no-padding-left {
+		padding-left: 0 !important;
+	}
+	.is-no-padding-right {
+		padding-right: 0 !important;
+	}
+	.is-no-padding-top {
+		padding-top: 0 !important;
+	}
+	.is-no-padding-bottom {
+		padding-bottom: 0 !important;
+	}
+
+.is-no-margin {
+	margin: 0 !important;
+}
+	.is-no-margin-left {
+		margin-left: 0 !important;
+	}
+	.is-no-margin-right {
+		margin-right: 0 !important;
+	}
+	.is-no-margin-top {
+		margin-top: 0 !important;
+	}
+	.is-no-margin-bottom {
+		margin-bottom: 0 !important;
+	}

@@ -14,7 +14,7 @@ a {
   color: inherit;
   line-height: inherit;
   text-decoration: none;
-  transition: all $animation-speed ease;
+  transition: all var(--animation-speed) ease;
 }
 
 p > a,

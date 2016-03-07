@@ -1,57 +1,66 @@
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 12px;
-  text-rendering: optimizeLegibility;
+	color: var(--darkest-gray);
+	font-family: var(--header-font);
+	margin-bottom: var(--size-sm);
+	text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: $darkest-gray;
-  font-family: var(--header-font);
-}
+/* 
+	typographic styles are scoped to the .content class
+	this allows you to use the correct headers without worrying about styles
+*/
 
-h1 {
-  font-size: 22px;
-  line-height: 1.1;
-}
+.content {
+	h1 {
+		font-size: 22px;
+		line-height: 1.1;
+	}
 
-h2 {
-  font-size: 20px;
-  line-height: 1.2;
-}
+	h2 {
+		font-size: 20px;
+		line-height: 1.2;
+	}
 
-h3 {
-  font-size: 19px;
-  line-height: 1.27;
-}
+	h3 {
+		font-size: 19px;
+		line-height: 1.27;
+	}
 
-h4,h5,h6 {
-  font-size: 18px;
-  line-height: 1.333;
-}
+	h4, h5, h6 {
+		font-size: 18px;
+		line-height: 1.333;
+	}
 
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 24px;
-  text-rendering: optimizeLegibility;
-}
+	p {
+		font-size: 16px;
+		line-height: 1.5;
+		text-rendering: optimizeLegibility;
+	}
 
+	p:not(:last-child) {
+		margin-bottom: 24px;
+	}
+}
 
 @media (--breakpoint-medium-and-up) {
-  h1, h2, h3, h4, h5, h6, p {
-    margin-bottom: 24px;
-  }
-  h1 {
-    font-size: 61.035px;
-    line-height: 1.181;
-  }
+	.content {
+		h1, h2, h3, h4, h5, h6 {
+			margin-bottom: 24px;
+		}
 
-  h2 {
-    font-size: 39.063px;
-    line-height: 1.24;
-  }
+		h1 {
+			font-size: 61.035px;
+			line-height: 1.181;
+		}
 
-  h3, h4, h5, h6 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
+		h2 {
+			font-size: 39.063px;
+			line-height: 1.24;
+		}
+
+		h3, h4, h5, h6 {
+			font-size: 20px;
+			line-height: 1.2;
+		}
+	}
 }

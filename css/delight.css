@@ -145,12 +145,7 @@ body {
 
 	/* Font-Family */
 
-	/* Sizing
-		 8 is the magic number
-		 8,16,24,32,40,48,56,64,72
-		 Base font size of 16
-		 Baseline of 24 (16px/1.5)
-	*/
+	/* Sizing: Baseline is 24; */
 
 	/* Dimensions */
 
@@ -204,132 +199,95 @@ body {
 	color: #212121;
 	font: normal 400 16px/1.5 "Museo Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	background: #fff;
-
-  padding-left: 12px;
-  padding-right: 12px;
 }
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 12px;
-  text-rendering: optimizeLegibility;
-}
-
 h1 {
-	color: $darkest-gray;
+	color: #292B33;
 	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	margin-bottom: 12px;
+	text-rendering: optimizeLegibility;
 }
-
 h2 {
-	color: $darkest-gray;
+	color: #292B33;
 	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	margin-bottom: 12px;
+	text-rendering: optimizeLegibility;
 }
-
 h3 {
-	color: $darkest-gray;
+	color: #292B33;
 	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	margin-bottom: 12px;
+	text-rendering: optimizeLegibility;
 }
-
 h4 {
-	color: $darkest-gray;
+	color: #292B33;
 	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	margin-bottom: 12px;
+	text-rendering: optimizeLegibility;
 }
-
 h5 {
-	color: $darkest-gray;
+	color: #292B33;
 	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	margin-bottom: 12px;
+	text-rendering: optimizeLegibility;
 }
-
 h6 {
-	color: $darkest-gray;
+	color: #292B33;
 	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	margin-bottom: 12px;
+	text-rendering: optimizeLegibility;
 }
 
-h1 {
-  font-size: 22px;
-  line-height: 1.1;
+/* 
+	typographic styles are scoped to the .content class
+	this allows you to use the correct headers without worrying about styles
+*/
+
+.content h1 {
+	font-size: 22px;
+	line-height: 1.1;
 }
 
-h2 {
-  font-size: 20px;
-  line-height: 1.2;
+.content h2 {
+	font-size: 20px;
+	line-height: 1.2;
 }
 
-h3 {
-  font-size: 19px;
-  line-height: 1.27;
+.content h3 {
+	font-size: 19px;
+	line-height: 1.27;
 }
 
-h4,h5,h6 {
-  font-size: 18px;
-  line-height: 1.333;
+.content h4, .content h5, .content h6 {
+	font-size: 18px;
+	line-height: 1.333;
 }
 
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 24px;
-  text-rendering: optimizeLegibility;
+.content p {
+	font-size: 16px;
+	line-height: 1.5;
+	text-rendering: optimizeLegibility;
 }
 
+.content p:not(:last-child) {
+	margin-bottom: 24px;
+}
 
 @media screen and (min-width: 32em) {
-  h1, h2, h3, h4, h5, h6, p {
-    margin-bottom: 24px;
-  }
-  h1 {
-    font-size: 61.035px;
-    line-height: 1.181;
-  }
-
-  h2 {
-    font-size: 39.063px;
-    line-height: 1.24;
-  }
-
-  h3, h4, h5, h6 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-/* ==========================================================================
-   LINKS
-   ========================================================================== */
-
-/*
-  Long-gone are the days where all hyperlinks were blue, underlined and only wrapped inline content.)
-  This file resets the style of a link,
-  so that they can be used throughout the website without resetting styles everytime.
-
-  Links inside paragraph tags (body text) will still be styled like regular hyperlinks.
-  If hyperlink styles need to be reapplied, use the .link class.
-*/
-a {
-  color: inherit;
-  line-height: inherit;
-  text-decoration: none;
-  transition: all $animation-speed ease;
-}
-
-p > a,
-.link {
-  color: #0069c6;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-p > a:visited, .link:visited {
-	font-size: 100px;
-	color: #0069c6;
-}
-
-p > a:hover, .link:hover {
-	color: #7FDBFF;
-}
-
-p > a:focus,
-  p > a:active,
-  .link:focus,
-  .link:active {
-	color: #195284;
+	.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+		margin-bottom: 24px;
+	}
+	.content h1 {
+		font-size: 61.035px;
+		line-height: 1.181;
+	}
+	.content h2 {
+		font-size: 39.063px;
+		line-height: 1.24;
+	}
+	.content h3, .content h4, .content h5, .content h6 {
+		font-size: 20px;
+		line-height: 1.2;
+	}
 }
 @media print {
   * {
@@ -403,3 +361,142 @@ p > a:focus,
     display: none;
   }
 }
+
+/* ==========================================================================
+   FLEXBOX-BASED GRID
+   ========================================================================== */
+/*
+	Use this grid to arrange items horizontally
+
+	On mobile, all .column elements are full-width.
+	Flexbox is activated on tablet screens and larger
+*/
+
+.column {
+	flex: 1;
+	padding: 12px;
+}
+
+@media screen and (min-width: 32em) {
+	/* activate flexbox grid on tablet and larger */
+	.columns {
+		display: flex;
+	}
+	/* grid modifiers */
+	.columns.is-centered {
+		justify-content: center;
+	}
+	.columns.is-multiline {
+		flex-wrap: wrap;
+	}
+	.columns.is-vcentered {
+		align-items: center;
+	}
+
+	.column {
+		padding: 24px;
+	}
+	/* column sizing */
+	.column.is-half {
+		width: 50%;
+		flex: none;
+	}
+
+	.column.is-third {
+		width: 33.3333%;
+		flex: none;
+	}
+
+	.column.is-quarter {
+		width: 25%;
+		flex: none;
+	}
+}
+/* ==========================================================================
+   SECTIONS
+   ========================================================================== */
+/*
+	Use sections to arrange the page vertically
+*/
+
+.section {
+	background: white;
+	padding: 24px 0;
+}
+
+/* adds border between adjacent sections */
+.section + .section {
+	border-top: 2px solid #f5f7fa;
+}
+
+@media screen and (min-width: 32em) {
+	.section {
+		padding: 48px 0;
+	}
+	.section.is-medium {
+		padding: 120px 0;
+	}
+	.section.is-large {
+		padding: 240px 0;
+	}
+}
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+	padding-left: 24px;
+	padding-right: 24px;
+	width: 100%;
+}
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+/* ==========================================================================
+   LINKS
+   ========================================================================== */
+
+/*
+  Long-gone are the days where all hyperlinks were blue, underlined and only wrapped inline content.)
+  This file resets the style of a link,
+  so that they can be used throughout the website without resetting styles everytime.
+
+  Links inside paragraph tags (body text) will still be styled like regular hyperlinks.
+  If hyperlink styles need to be reapplied, use the .link class.
+*/
+a {
+  color: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  transition: all 250ms ease;
+}
+
+p > a,
+.link {
+  color: #0069c6;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+p > a:visited, .link:visited {
+	font-size: 100px;
+	color: #0069c6;
+}
+
+p > a:hover, .link:hover {
+	color: #7FDBFF;
+}
+
+p > a:focus,
+  p > a:active,
+  .link:focus,
+  .link:active {
+	color: #195284;
+}
+
+/* ==========================================================================
+   TITLES
+   ========================================================================== */

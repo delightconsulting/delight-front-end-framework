@@ -7,8 +7,8 @@ var atImport = require("postcss-import")
 var cssvariables = require('postcss-css-variables')
 var compressor = require('node-minify')
 var conditionals = require('postcss-conditionals')
-var postcssnested = require('postcss-nested')
 var customMedia = require("postcss-custom-media")
+var postcssnested = require('postcss-nested')
 
 // css to be processed
 var css = fs.readFileSync("src/delight.css", "utf8")
