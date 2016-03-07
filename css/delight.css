@@ -1,0 +1,405 @@
+/*
+   Delight Front-end Framework
+*/
+
+/************************/
+/* RESET ALL THE THINGS */
+/************************/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, cite, code, em, img, small, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/**************/
+/* BOX SIZING */
+/**************/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/*****************/
+/* CURSOR RESETS */
+/* Thanks Tim: https://gist.github.com/murtaugh/5247154 */
+/*****************/
+html,
+body {
+	cursor: default;
+}
+
+code {
+	cursor: text;
+}
+
+/* 
+	textarea and input[type="text"] already receive 
+	"cursor: text" via browsers' base stylesheets 
+*/
+
+a,
+label,
+button,
+input[type="radio"],
+input[type="submit"],
+input[type="checkbox"],
+input[type="button"] {
+	cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+	cursor: default;
+}
+
+/*****************/
+/* SET DISPLAY-ROLE FOR HTML5 ELEMENTS */
+/*****************/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/*****************/
+/* NORMALIZE BOLD and ITALIC STYLES */
+/*****************/
+em,
+i {
+	font-style: italic;
+	line-height: inherit;
+}
+
+strong,
+b {
+	font-weight: bold;
+	line-height: inherit;
+}
+
+/*****************/
+/* MAKE IMG and MEDIA RESPONSIVE BY DEFAULT */
+/*****************/
+img,
+object,
+embed {
+	max-width: 100%;
+	height: auto;
+}
+
+img {
+	vertical-align: middle;
+}
+
+/*****************/
+/* Fixes Firefox bug  */
+/* https://bugzilla.mozilla.org/show_bug.cgi?id=140562 */
+/*****************/
+::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+/*****************/
+/* OTHER STUFF FOR HTML and BODY */
+/*****************/
+html {
+	overflow-y: scroll; /* Force vertical scrollbar to prevent jumpy pages */
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	line-height: 1;
+	font-family: sans-serif; /* looks nicer */
+}
+
+/*
+   VARIABLES
+   Add your variables to the :root selector.
+   Then reference them in your other css modules like so
+
+   :root {
+      --spacing-small: 32px;
+   }
+
+   .someClass {
+     padding: var(--spacing-small)
+   }
+
+*/
+
+:root {
+	/* Colors */
+
+	/* Grayscale */
+
+	/* Font-Family */
+
+	/* Sizing
+		 8 is the magic number
+		 8,16,24,32,40,48,56,64,72
+		 Base font size of 16
+		 Baseline of 24 (16px/1.5)
+	*/
+
+	/* Dimensions */
+
+	/* Borders */
+
+	/* Animation */
+
+	/* Media Query variables */
+}
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+/*
+
+  These breakpoints can be extended or modified to your hearts content
+
+  You can use like this:
+
+  @media (--breakpoint-medium-and-up) {
+      Your breakpoint styles here.
+      Don't forget to make them mobile first :)
+  }
+
+*/
+
+
+/* USING MEDIA QUERIES */
+/* Medium and Up - Targets everything larger than mobile
+   ========================================================================== */
+@media screen and (min-width: 32em) {
+
+}
+/* Medium - only targets 1st breakpoint. Styles
+   ========================================================================== */
+@media screen and (min-width: 32em) and (max-width: 64em) {
+
+}
+/* Large - only targets 2nd breakpoint.
+   ========================================================================== */
+@media screen and (min-width: 64em) {
+
+}
+
+html,
+body {
+	height: 100%;
+}
+body {
+	background-color: #FFFFFF;
+	color: #212121;
+	font: normal 400 16px/1.5 "Museo Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	background: #fff;
+
+  padding-left: 12px;
+  padding-right: 12px;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 12px;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+	color: $darkest-gray;
+	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+}
+
+h2 {
+	color: $darkest-gray;
+	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+}
+
+h3 {
+	color: $darkest-gray;
+	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+}
+
+h4 {
+	color: $darkest-gray;
+	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+}
+
+h5 {
+	color: $darkest-gray;
+	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+}
+
+h6 {
+	color: $darkest-gray;
+	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 19px;
+  line-height: 1.27;
+}
+
+h4,h5,h6 {
+  font-size: 18px;
+  line-height: 1.333;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  text-rendering: optimizeLegibility;
+}
+
+
+@media screen and (min-width: 32em) {
+  h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-size: 61.035px;
+    line-height: 1.181;
+  }
+
+  h2 {
+    font-size: 39.063px;
+    line-height: 1.24;
+  }
+
+  h3, h4, h5, h6 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+/* ==========================================================================
+   LINKS
+   ========================================================================== */
+
+/*
+  Long-gone are the days where all hyperlinks were blue, underlined and only wrapped inline content.)
+  This file resets the style of a link,
+  so that they can be used throughout the website without resetting styles everytime.
+
+  Links inside paragraph tags (body text) will still be styled like regular hyperlinks.
+  If hyperlink styles need to be reapplied, use the .link class.
+*/
+a {
+  color: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  transition: all $animation-speed ease;
+}
+
+p > a,
+.link {
+  color: #0069c6;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+p > a:visited, .link:visited {
+	font-size: 100px;
+	color: #0069c6;
+}
+
+p > a:hover, .link:hover {
+	color: #7FDBFF;
+}
+
+p > a:focus,
+  p > a:active,
+  .link:focus,
+  .link:active {
+	color: #195284;
+}
+@media print {
+  * {
+    text-shadow: none !important;
+    color: #000 !important; /* black prints faster */
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (' attr(href) ')";
+  }
+
+  abbr[title]:after {
+    content: " (' attr(title) ')";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: '';
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  /* Chrome (OSX) fix for https://github.com/twbs/bootstrap/issues/11245 */
+  /* Once fixed, we can just straight up remove this. */
+  select, table, td, th {
+    background: #fff !important;
+  }
+
+  table {
+    border-collapse: collapse !important;
+  }
+
+  .header {
+    display: none;
+  }
+}

@@ -1,0 +1,57 @@
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 12px;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $darkest-gray;
+  font-family: var(--header-font);
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 19px;
+  line-height: 1.27;
+}
+
+h4,h5,h6 {
+  font-size: 18px;
+  line-height: 1.333;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  text-rendering: optimizeLegibility;
+}
+
+
+@media (--breakpoint-medium-and-up) {
+  h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-size: 61.035px;
+    line-height: 1.181;
+  }
+
+  h2 {
+    font-size: 39.063px;
+    line-height: 1.24;
+  }
+
+  h3, h4, h5, h6 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}

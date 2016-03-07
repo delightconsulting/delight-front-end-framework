@@ -1,0 +1,68 @@
+/*
+   VARIABLES
+   Add your variables to the :root selector.
+   Then reference them in your other css modules like so
+
+   :root {
+      --spacing-small: 32px;
+   }
+
+   .someClass {
+     padding: var(--spacing-small)
+   }
+
+*/
+
+:root {
+	/* Colors */
+	--red: #F44336;
+	--orange: #FF9800;
+	--yellow: #FFEB3B;
+	--green: #4CAF50;
+	--teal: #009688;
+	--blue: #2196F3;
+	--pink: #E91E63;
+	--purple: #9C27B0;
+
+	/* Grayscale */
+	--white: #FFFFFF;
+	--lighest-gray: #f5f7fa;
+	--light-gray: #d3d6db;
+	--gray: #aeb1b5;
+	--dark-gray: #69707a;
+	--darkest-gray: #292B33;
+	--black: #212121;
+
+	/* Font-Family */
+	--body-font: "Museo Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	--header-font: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	--monospace-font: "Source Code Pro", "Monaco", "Inconsolata", monospace;
+
+	/* Sizing
+		 8 is the magic number
+		 8,16,24,32,40,48,56,64,72
+		 Base font size of 16
+		 Baseline of 24 (16px/1.5)
+	*/
+	--size-xs: 6px;
+	--size-sm: 12px;
+	--size-md: 24px;
+	--size-lg: 48px;
+	--size-xl: 72px;
+
+	/* Dimensions */
+	--column-gap: 24px;
+	--header-height: 72px;
+
+	/* Borders */
+	--border-width: 2px;
+	--border-radius: 3px;
+
+	/* Animation */
+	--animation-speed: 250ms;
+
+	/* Media Query variables */
+	--tablet: 769px;
+	--desktop: 980px;
+	--widescreen: 1180px;
+}

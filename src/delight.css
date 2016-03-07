@@ -2,12 +2,12 @@
    Delight Front-end Framework
 */
 
-@import "./lib/_normalize";
+@import "./base/_reset";
 
-@import "./_variables";
-@import "./_media-queries";
+@import "./tools/_variables";
+@import "./tools/_media-queries";
 
-@import "./_base";
-@import "./_typography";
-
-@import "./_styles";
+@import "./base/_global";
+@import "./base/_type";
+@import "./base/_links";
+@import "./base/_print";

@@ -1,0 +1,39 @@
+/* ==========================================================================
+   LINKS
+   ========================================================================== */
+
+/*
+  Long-gone are the days where all hyperlinks were blue, underlined and only wrapped inline content.)
+  This file resets the style of a link,
+  so that they can be used throughout the website without resetting styles everytime.
+
+  Links inside paragraph tags (body text) will still be styled like regular hyperlinks.
+  If hyperlink styles need to be reapplied, use the .link class.
+*/
+a {
+  color: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  transition: all $animation-speed ease;
+}
+
+p > a,
+.link {
+  color: #0069c6;
+  cursor: pointer;
+  text-decoration: underline;
+
+  &:visited {
+    font-size: 100px;
+    color: #0069c6;
+  }
+
+  &:hover {
+    color: #7FDBFF;
+  }
+
+  &:focus,
+  &:active {
+    color: #195284;
+  }
+}

@@ -9,13 +9,92 @@
     <meta name="author" content="Shane Boland">
     <meta name="description" content="A front-end framework for building websites at Delight">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/delight.min.css">
+    <link rel="stylesheet" href="css/delight.css">
   </head>
   <body>
-    <div style="display:table;width:100%; height: 100%;">
-      <div class="display:table-cell;vertical-align:middle;">
-        <h1>Delight Front-end Framework</h1>
+    
+    <header class="header">
+      <div class="container">
+
+        <!-- Left side -->
+        <div class="header-left">
+          <a class="header-item" href="{{ site.github.url }}/">
+            Delight Front-end Framework
+          </a>
+        </div>
+
+        <!-- Right side -->
+        <div id="js-header-menu" class="header-right header-menu">
+          <span class="header-item">
+            <a href="{{ "/about" | prepend: site.github.url }}">About</a>
+          </span>
+          <span class="header-item">
+            <a href="{{ "/our-work" | prepend: site.github.url }}">Our Work</a>
+          </span>
+          <span class="header-item">
+            <a href="{{ "/contact" | prepend: site.github.url }}">Contact</a>
+          </span>
+          <span class="header-item">
+            <a href="{{ "/contact" | prepend: site.github.url }}" class="button is-success">
+              Start Your Project
+            </a>
+          </span>
+        </div>
+
+        <!-- Hamburger menu (on mobile) -->
+        <span id="js-header-toggle" class="header-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+
       </div>
-    </div>
+    </header>
+    <h1><span>Page</span> Title Lorem ipsum dolor sit amet, consectetur adipisicing</h1>
+    <h2>Second Title Second Title Second Title Second Title</h2>
+    <h3>Third-level Title Third-level Title Third-level Title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut <a href="javascript:void(0);">labore et dolore</a> magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum <a href="javascript:void(0);">dolore eu fugiat</a> nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h1>Page Title</h1>
+    <h2>Second Title</h2>
+    <h3>Third-level Title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in <span class="link">culpa qui</span> officia deserunt mollit anim id est laborum.</p>
+    <h1>Page Title</h1>
+    <h2>Second Title</h2>
+    <h3>Third-level Title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h1>Page <span>Title</span></h1>
+    <h2>Second Title</h2>
+    <h3>Third-level Title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+    <script src="http://files.keyes.ie/things/baseliner/baseliner-latest.min.js">
+    </script>
+    <script>
+    window.onload = function() {
+        baseliner = new Baseliner();
+    }
+    </script>
+    
   </body>
 </html>

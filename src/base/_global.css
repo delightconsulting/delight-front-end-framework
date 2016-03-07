@@ -1,0 +1,13 @@
+html,
+body {
+	height: 100%;
+}
+body {
+	background-color: var(--white);
+	color: var(--black);
+	font: normal 400 16px/1.5 var(--body-font);
+	background: #fff;
+
+  padding-left: 12px;
+  padding-right: 12px;
+}
