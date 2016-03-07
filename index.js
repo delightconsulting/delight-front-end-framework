@@ -3,6 +3,7 @@
 var fs = require("fs")
 var autoprefixer = require("autoprefixer")
 var postcss = require("postcss")
+var simpleExtend = require('postcss-extend')
 var atImport = require("postcss-import")
 var cssvariables = require('postcss-css-variables')
 var compressor = require('node-minify')
@@ -16,6 +17,7 @@ var css = fs.readFileSync("src/delight.css", "utf8")
 // process css
 var output = postcss([autoprefixer])
  .use(atImport())
+ .use(simpleExtend())
  .use(postcssnested())
  .use(cssvariables())
  .use(conditionals())
@@ -33,4 +35,4 @@ new compressor.minify({
   type: 'sqwish',
   fileIn: './css/delight.css',
   fileOut: './css/delight.min.css'
-});
+})

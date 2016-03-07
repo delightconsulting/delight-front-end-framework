@@ -1,66 +1,89 @@
 h1, h2, h3, h4, h5, h6 {
+	@extend .block;
+
 	color: var(--darkest-gray);
 	font-family: var(--header-font);
-	margin-bottom: var(--size-sm);
 	text-rendering: optimizeLegibility;
 }
 
+/* 
+	Use these classes to apply type styles across the document
+*/
+.h1 {
+	font-size: 22px;
+	line-height: 1.1;
+}
+
+.h2 {
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.h3 {
+	font-size: 19px;
+	line-height: 1.27;
+}
+
+.h4, .h5, .h6 {
+	font-size: 18px;
+	line-height: 1.333;
+}
+
+@media (--breakpoint-medium-and-up) {
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		@extend .block;
+	}
+
+	.h1 {
+		font-size: 61.035px;
+		line-height: 1.181;
+	}
+
+	.h2 {
+		font-size: 39.063px;
+		line-height: 1.24;
+	}
+
+	.h3, .h4, .h5, .h6 {
+		font-size: 20px;
+		line-height: 1.2;
+	}
+}
+
+/***********/
+/* CONTENT */
+/***********/
 /* 
 	typographic styles are scoped to the .content class
 	this allows you to use the correct headers without worrying about styles
 */
 
-.content {
-	h1 {
-		font-size: 22px;
-		line-height: 1.1;
-	}
-
-	h2 {
-		font-size: 20px;
-		line-height: 1.2;
-	}
-
-	h3 {
-		font-size: 19px;
-		line-height: 1.27;
-	}
-
-	h4, h5, h6 {
-		font-size: 18px;
-		line-height: 1.333;
-	}
-
-	p {
-		font-size: 16px;
-		line-height: 1.5;
-		text-rendering: optimizeLegibility;
-	}
-
-	p:not(:last-child) {
-		margin-bottom: 24px;
-	}
+.content h1 {
+	@extend .h1;
 }
 
-@media (--breakpoint-medium-and-up) {
-	.content {
-		h1, h2, h3, h4, h5, h6 {
-			margin-bottom: 24px;
-		}
+.content h2 {
+	@extend .h2;
+}
 
-		h1 {
-			font-size: 61.035px;
-			line-height: 1.181;
-		}
+.content h3 {
+	@extend .h3;
+}
 
-		h2 {
-			font-size: 39.063px;
-			line-height: 1.24;
-		}
+.content h4 {
+	@extend .h4;
+}
 
-		h3, h4, h5, h6 {
-			font-size: 20px;
-			line-height: 1.2;
-		}
-	}
+.content h5 {
+	@extend .h5;
+}
+
+.content h6 {
+	@extend .h6;
+}
+
+.content p {
+	@extend .block;
+
+	text-rendering: optimizeLegibility;
 }

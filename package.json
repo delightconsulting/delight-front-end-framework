@@ -41,5 +41,8 @@
     "start": "parallelshell 'npm run build:css' 'npm run server'",
     "build:css": "watch 'node index.js' src/",
     "server": "browser-sync start --server --files 'css/*.css, *.html'"
+  },
+  "dependencies": {
+    "postcss-extend": "^1.0.1"
   }
 }

@@ -23,9 +23,7 @@ html {
 	box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
 	box-sizing: inherit;
 }
 
@@ -33,8 +31,7 @@ html {
 /* CURSOR RESETS */
 /* Thanks Tim: https://gist.github.com/murtaugh/5247154 */
 /*****************/
-html,
-body {
+html, body {
 	cursor: default;
 }
 
@@ -47,40 +44,30 @@ code {
 	"cursor: text" via browsers' base stylesheets 
 */
 
-a,
-label,
-button,
-input[type="radio"],
-input[type="submit"],
-input[type="checkbox"],
-input[type="button"] {
+a, label, button, input[type="radio"], input[type="submit"], input[type="checkbox"], input[type="button"] {
 	cursor: pointer;
 }
 
-button[disabled],
-input[disabled] {
+button[disabled], input[disabled] {
 	cursor: default;
 }
 
 /*****************/
 /* SET DISPLAY-ROLE FOR HTML5 ELEMENTS */
 /*****************/
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
 /*****************/
 /* NORMALIZE BOLD and ITALIC STYLES */
 /*****************/
-em,
-i {
+em, i {
 	font-style: italic;
 	line-height: inherit;
 }
 
-strong,
-b {
+strong, b {
 	font-weight: bold;
 	line-height: inherit;
 }
@@ -88,9 +75,7 @@ b {
 /*****************/
 /* MAKE IMG and MEDIA RESPONSIVE BY DEFAULT */
 /*****************/
-img,
-object,
-embed {
+img, object, embed {
 	max-width: 100%;
 	height: auto;
 }
@@ -190,8 +175,7 @@ body {
 
 }
 
-html,
-body {
+html, body {
 	height: 100%;
 }
 body {
@@ -200,94 +184,157 @@ body {
 	font: normal 400 16px/1.5 "Museo Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	background: #fff;
 }
-h1 {
-	color: #292B33;
-	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
-	margin-bottom: 12px;
-	text-rendering: optimizeLegibility;
-}
-h2 {
-	color: #292B33;
-	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
-	margin-bottom: 12px;
-	text-rendering: optimizeLegibility;
-}
-h3 {
-	color: #292B33;
-	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
-	margin-bottom: 12px;
-	text-rendering: optimizeLegibility;
-}
-h4 {
-	color: #292B33;
-	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
-	margin-bottom: 12px;
-	text-rendering: optimizeLegibility;
-}
-h5 {
-	color: #292B33;
-	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
-	margin-bottom: 12px;
-	text-rendering: optimizeLegibility;
-}
-h6 {
-	color: #292B33;
-	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
-	margin-bottom: 12px;
-	text-rendering: optimizeLegibility;
+
+.block:not(:last-child) {
+	margin-bottom: 24px;
 }
 
-/* 
-	typographic styles are scoped to the .content class
-	this allows you to use the correct headers without worrying about styles
-*/
-
-.content h1 {
-	font-size: 22px;
-	line-height: 1.1;
+h1:not(:last-child) {
+	margin-bottom: 24px;
 }
 
-.content h2 {
-	font-size: 20px;
-	line-height: 1.2;
+h2:not(:last-child) {
+	margin-bottom: 24px;
 }
 
-.content h3 {
-	font-size: 19px;
-	line-height: 1.27;
+h3:not(:last-child) {
+	margin-bottom: 24px;
 }
 
-.content h4, .content h5, .content h6 {
-	font-size: 18px;
-	line-height: 1.333;
+h4:not(:last-child) {
+	margin-bottom: 24px;
 }
 
-.content p {
-	font-size: 16px;
-	line-height: 1.5;
-	text-rendering: optimizeLegibility;
+h5:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+h6:not(:last-child) {
+	margin-bottom: 24px;
 }
 
 .content p:not(:last-child) {
 	margin-bottom: 24px;
 }
+h1 {
+	color: #292B33;
+	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	text-rendering: optimizeLegibility;
+}
+h2 {
+	color: #292B33;
+	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	text-rendering: optimizeLegibility;
+}
+h3 {
+	color: #292B33;
+	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	text-rendering: optimizeLegibility;
+}
+h4 {
+	color: #292B33;
+	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	text-rendering: optimizeLegibility;
+}
+h5 {
+	color: #292B33;
+	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	text-rendering: optimizeLegibility;
+}
+h6 {
+	color: #292B33;
+	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	text-rendering: optimizeLegibility;
+}
+
+/* 
+	Use these classes to apply type styles across the document
+*/
+.h1, .content h1 {
+	font-size: 22px;
+	line-height: 1.1;
+}
+
+.h2, .content h2 {
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.h3, .content h3 {
+	font-size: 19px;
+	line-height: 1.27;
+}
+
+.h4, .h5, .h6, .content h4, .content h5, .content h6 {
+	font-size: 18px;
+	line-height: 1.333;
+}
 
 @media screen and (min-width: 32em) {
-	.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+	.h1:not(:last-child) {
 		margin-bottom: 24px;
 	}
-	.content h1 {
+	.h2:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.h3:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.h4:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.h5:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.h6:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.content h1:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.content h2:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.content h3:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.content h4:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.content h5:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.content h6:not(:last-child) {
+		margin-bottom: 24px;
+	}
+
+	.h1, .content h1 {
 		font-size: 61.035px;
 		line-height: 1.181;
 	}
-	.content h2 {
+
+	.h2, .content h2 {
 		font-size: 39.063px;
 		line-height: 1.24;
 	}
-	.content h3, .content h4, .content h5, .content h6 {
+
+	.h3, .h4, .h5, .h6, .content h3, .content h4, .content h5, .content h6 {
 		font-size: 20px;
 		line-height: 1.2;
 	}
+}
+
+/***********/
+/* CONTENT */
+/***********/
+/* 
+	typographic styles are scoped to the .content class
+	this allows you to use the correct headers without worrying about styles
+*/
+
+.content p {
+
+	text-rendering: optimizeLegibility;
 }
 @media print {
   * {
@@ -297,8 +344,7 @@ h6 {
     box-shadow: none !important;
   }
 
-  a,
-  a:visited {
+  a, a:visited {
     text-decoration: underline;
   }
 
@@ -311,13 +357,11 @@ h6 {
   }
 
   /* Don't show links for images, or javascript/internal links */
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
+  a[href^="javascript:"]:after, a[href^="#"]:after {
     content: '';
   }
 
-  pre,
-  blockquote {
+  pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
@@ -326,8 +370,7 @@ h6 {
     display: table-header-group;
   }
 
-  tr,
-  img {
+  tr, img {
     page-break-inside: avoid;
   }
 
@@ -335,15 +378,12 @@ h6 {
     max-width: 100% !important;
   }
 
-  p,
-  h2,
-  h3 {
+  p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  h2,
-  h3 {
+  h2, h3 {
     page-break-after: avoid;
   }
 
@@ -474,8 +514,7 @@ a {
   transition: all 250ms ease;
 }
 
-p > a,
-.link {
+p > a, .link {
   color: #0069c6;
   cursor: pointer;
   text-decoration: underline;
@@ -490,10 +529,7 @@ p > a:hover, .link:hover {
 	color: #7FDBFF;
 }
 
-p > a:focus,
-  p > a:active,
-  .link:focus,
-  .link:active {
+p > a:focus, p > a:active, .link:focus, .link:active {
 	color: #195284;
 }
 
