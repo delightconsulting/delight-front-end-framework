@@ -1,3 +1,48 @@
 /* ==========================================================================
    FORMS
    ========================================================================== */
+
+
+.mw-500 {
+	max-width: 500px;
+	margin: 0 auto;
+}
+label, input {
+	display: block;
+	font-size: inherit;
+	margin-bottom: var(--size-sm);
+}
+input[type="email"] {
+	border: 1px solid var(--light-gray);
+	border-radius: var(--border-radius);
+	font-size: inherit;
+	padding: var(--size-xs);
+	outline: 0;
+	width: 100%;
+	&:focus {
+		border: 1px solid var(--blue);
+	}
+}
+
+input[type="submit"] {
+	background-color: var(--blue);
+	border: 1px solid var(--light-gray);
+	border-radius: var(--border-radius);
+	color: var(--white);
+	font-size: inherit;
+	padding: var(--size-sm) var(--size-xs);
+	outline: 0;
+	transition: background-color var(--animation-speed);
+	width: 100%;
+	&:hover {
+		background-color: #619DB7;
+	}
+	&:active {
+		background-color: var(--blue);
+		transform: translateY(1px);
+	}
+	&:focus {
+		background-color: #619DB7;
+		border: 1px solid var(--white);
+	}
+}

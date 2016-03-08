@@ -529,6 +529,59 @@ h6 {
 /* ==========================================================================
    FORMS
    ========================================================================== */
+
+
+.mw-500 {
+	max-width: 500px;
+	margin: 0 auto;
+}
+label {
+	display: block;
+	font-size: inherit;
+	margin-bottom: 12px;
+}
+input {
+	display: block;
+	font-size: inherit;
+	margin-bottom: 12px;
+}
+input[type="email"] {
+	border: 1px solid #d3d6db;
+	border-radius: 3px;
+	font-size: inherit;
+	padding: 6px;
+	outline: 0;
+	width: 100%;
+}
+input[type="email"]:focus {
+	border: 1px solid #6ea8c1;
+}
+
+input[type="submit"] {
+	background-color: #6ea8c1;
+	border: 1px solid #d3d6db;
+	border-radius: 3px;
+	color: #FFFFFF;
+	font-size: inherit;
+	padding: 12px 6px;
+	outline: 0;
+	transition: background-color 250ms;
+	width: 100%;
+}
+
+input[type="submit"]:hover {
+	background-color: #619DB7;
+}
+
+input[type="submit"]:active {
+	background-color: #6ea8c1;
+	transform: translateY(1px);
+}
+
+input[type="submit"]:focus {
+	background-color: #619DB7;
+	border: 1px solid #FFFFFF;
+}
 /* ==========================================================================
    LINKS
    ========================================================================== */
