@@ -1,3 +1,12 @@
 /* ==========================================================================
    TITLES
    ========================================================================== */
+
+.hero-content .title {
+	@extend .h1;
+	font-family: var(--header-font);
+}
+.hero-content .subtitle {
+	@extend .h3;
+	font-family: var(--body-font);
+}

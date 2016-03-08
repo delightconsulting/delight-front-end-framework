@@ -29,3 +29,14 @@
 	.is-no-margin-bottom {
 		margin-bottom: 0 !important;
 	}
+
+/* backgrounds */
+.is-textured {
+	background-image: url("../images/texture-black.svg");
+}
+
+.is-delight-gradient {
+	background-color: $brand;
+	background: -webkit-linear-gradient(to right, var(--brand) , #ffcc33);
+	background: linear-gradient(to right, var(--brand) , #ffcc33);
+}

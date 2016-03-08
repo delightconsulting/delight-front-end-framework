@@ -27,22 +27,7 @@ html {
 
 /*****************/
 /* CURSOR RESETS */
-/* Thanks Tim: https://gist.github.com/murtaugh/5247154 */
 /*****************/
-html,
-body {
-	cursor: default;
-}
-
-code {
-	cursor: text;
-}
-
-/* 
-	textarea and input[type="text"] already receive 
-	"cursor: text" via browsers' base stylesheets 
-*/
-
 a,
 label,
 button,

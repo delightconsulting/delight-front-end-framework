@@ -29,21 +29,7 @@ html {
 
 /*****************/
 /* CURSOR RESETS */
-/* Thanks Tim: https://gist.github.com/murtaugh/5247154 */
 /*****************/
-html, body {
-	cursor: default;
-}
-
-code {
-	cursor: text;
-}
-
-/* 
-	textarea and input[type="text"] already receive 
-	"cursor: text" via browsers' base stylesheets 
-*/
-
 a, label, button, input[type="radio"], input[type="submit"], input[type="checkbox"], input[type="button"] {
 	cursor: pointer;
 }
@@ -174,6 +160,48 @@ body {
 @media screen and (min-width: 64em) {
 
 }
+.is-no-padding {
+	padding: 0 !important;
+}
+	.is-no-padding-left {
+		padding-left: 0 !important;
+	}
+	.is-no-padding-right {
+		padding-right: 0 !important;
+	}
+	.is-no-padding-top {
+		padding-top: 0 !important;
+	}
+	.is-no-padding-bottom {
+		padding-bottom: 0 !important;
+	}
+
+.is-no-margin {
+	margin: 0 !important;
+}
+	.is-no-margin-left {
+		margin-left: 0 !important;
+	}
+	.is-no-margin-right {
+		margin-right: 0 !important;
+	}
+	.is-no-margin-top {
+		margin-top: 0 !important;
+	}
+	.is-no-margin-bottom {
+		margin-bottom: 0 !important;
+	}
+
+/* backgrounds */
+.is-textured {
+	background-image: url("../images/texture-black.svg");
+}
+
+.is-delight-gradient {
+	background-color: $brand;
+	background: -webkit-linear-gradient(to right, #f6a824 , #ffcc33);
+	background: linear-gradient(to right, #f6a824 , #ffcc33);
+}
 
 html, body {
 	height: 100%;
@@ -181,7 +209,7 @@ html, body {
 body {
 	background-color: #FFFFFF;
 	color: #212121;
-	font: normal 400 16px/1.5 "Museo Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font: normal 400 16px/1.5 "museo-sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	background: #fff;
 }
 
@@ -218,39 +246,39 @@ h6:not(:last-child) {
 }
 h1 {
 	color: #292B33;
-	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
 	text-rendering: optimizeLegibility;
 }
 h2 {
 	color: #292B33;
-	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
 	text-rendering: optimizeLegibility;
 }
 h3 {
 	color: #292B33;
-	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
 	text-rendering: optimizeLegibility;
 }
 h4 {
 	color: #292B33;
-	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
 	text-rendering: optimizeLegibility;
 }
 h5 {
 	color: #292B33;
-	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
 	text-rendering: optimizeLegibility;
 }
 h6 {
 	color: #292B33;
-	font-family: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
 	text-rendering: optimizeLegibility;
 }
 
 /* 
 	Use these classes to apply type styles across the document
 */
-.h1, .content h1 {
+.h1, .content h1, .hero-content .title {
 	font-size: 22px;
 	line-height: 1.1;
 }
@@ -260,7 +288,7 @@ h6 {
 	line-height: 1.2;
 }
 
-.h3, .content h3 {
+.h3, .content h3, .hero-content .subtitle {
 	font-size: 19px;
 	line-height: 1.27;
 }
@@ -307,8 +335,14 @@ h6 {
 	.content h6:not(:last-child) {
 		margin-bottom: 24px;
 	}
+	.hero-content .title:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.hero-content .subtitle:not(:last-child) {
+		margin-bottom: 24px;
+	}
 
-	.h1, .content h1 {
+	.h1, .content h1, .hero-content .title {
 		font-size: 61.035px;
 		line-height: 1.181;
 	}
@@ -318,7 +352,7 @@ h6 {
 		line-height: 1.24;
 	}
 
-	.h3, .h4, .h5, .h6, .content h3, .content h4, .content h5, .content h6 {
+	.h3, .h4, .h5, .h6, .content h3, .content h4, .content h5, .content h6, .hero-content .subtitle {
 		font-size: 20px;
 		line-height: 1.2;
 	}
@@ -534,5 +568,79 @@ p > a:focus, p > a:active, .link:focus, .link:active {
 }
 
 /* ==========================================================================
+   HERO
+   ========================================================================== */
+.hero {
+	background-color: #FFFFFF;
+	text-align: center;
+}
+.hero.is-left {
+	text-align: left;
+}
+.hero.is-right {
+	text-align: right;
+}
+
+.hero.is-fullheight {
+	align-items: stretch;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+}
+
+.hero.is-fullheight > .hero-content {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media screen and (min-width: 32em) {
+	.hero.is-large > .hero-content {
+		padding: 240px 24px;
+	}
+	.hero.is-medium > .hero-content {
+		padding: 120px 24px;
+	}
+}
+
+.hero-content {
+	padding: 48px 24px;
+}
+
+@media screen and (min-width: 32em) {
+	.hero-content {
+		padding: 48px 0;
+	}
+}
+
+/* Background Colors */
+.hero.is-yellow {
+	background-color: #f6a824;
+}
+.hero.is-yellow .title {
+	color: #FFFFFF;
+}
+.hero.is-yellow .subtitle {
+	color: #212121;
+}
+.hero.is-blue {
+	background-color: #6ea8c1;
+}
+.hero.is-blue .title {
+	color: #FFFFFF;
+}
+.hero.is-blue .subtitle {
+	color: #FFFFFF;
+}
+/* ==========================================================================
    TITLES
    ========================================================================== */
+
+.hero-content .title {
+	font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+}
+.hero-content .subtitle {
+	font-family: "museo-sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}

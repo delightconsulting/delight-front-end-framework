@@ -15,14 +15,14 @@
 
 :root {
 	/* Colors */
-	--red: #F44336;
-	--orange: #FF9800;
-	--yellow: #FFEB3B;
-	--green: #4CAF50;
-	--teal: #009688;
-	--blue: #2196F3;
+	--red: #ed6c63;
+	--orange: #f68b39;
+	--yellow: #f6a824;
+	--green: #9acc7c;
+	--turquoise: #1fc8db;
+	--blue: #6ea8c1;
 	--pink: #E91E63;
-	--purple: #9C27B0;
+	--purple: #847bb9;
 
 	/* Grayscale */
 	--white: #FFFFFF;
@@ -33,9 +33,12 @@
 	--darkest-gray: #292B33;
 	--black: #212121;
 
+	--brand: var(--yellow);
+	--brand-secondary: var(--blue);
+
 	/* Font-Family */
-	--body-font: "Museo Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	--header-font: "Museo Slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	--body-font: "museo-sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	--header-font: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
 	--monospace-font: "Source Code Pro", "Monaco", "Inconsolata", monospace;
 
 	/* Sizing: Baseline is 24; */

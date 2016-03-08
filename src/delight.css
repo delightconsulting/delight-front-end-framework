@@ -6,6 +6,7 @@
 
 @import "./tools/_variables";
 @import "./tools/_media-queries";
+@import "./tools/_helpers";
 
 @import "./base/_global";
 @import "./base/_type";
@@ -19,4 +20,5 @@
 @import "./elements/_forms";
 @import "./elements/_links";
 
+@import "./components/_hero";
 @import "./components/_titles";

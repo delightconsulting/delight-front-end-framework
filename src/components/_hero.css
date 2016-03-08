@@ -1,3 +1,79 @@
 /* ==========================================================================
    HERO
    ========================================================================== */
+.hero {
+	background-color: var(--white);
+	text-align: center;
+	&.is-left {
+	  text-align: left;
+	}
+	&.is-right {
+	  text-align: right;
+	}
+}
+
+.hero.is-fullheight {
+	align-items: stretch;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+	& > .hero-content {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+@media (--breakpoint-medium-and-up) {
+	.hero {
+		&.is-large > .hero-content {
+			padding: 240px var(--size-md);
+		}
+		&.is-medium > .hero-content {
+			padding: 120px var(--size-md);
+		}
+	}
+}
+
+@media (--breakpoint-large-and-up) {
+	.hero {
+		&.is-large > .hero-content {
+			padding: 240px 0;
+		}
+		&.is-medium > .hero-content {
+			padding: 120px 0;
+		}
+	}
+}
+
+.hero-content {
+	padding: var(--size-lg) var(--size-md);
+}
+
+@media (--breakpoint-medium-and-up) {
+	.hero-content {
+		padding: var(--size-lg) 0;
+	}
+}
+
+/* Background Colors */
+.hero.is-yellow {
+	background-color: var(--yellow);
+	& .title {
+		color: var(--white);
+	}
+	& .subtitle {
+		color: var(--black);
+	}
+}
+.hero.is-blue {
+	background-color: var(--blue);
+	& .title {
+		color: var(--white);
+	}
+	& .subtitle {
+		color: var(--white);
+	}
+}
