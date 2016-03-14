@@ -14,28 +14,29 @@
   <body>
     
     <header class="header">
-      <div class="container">
+      <div class="wrapper">
 
         <!-- Left side -->
         <div class="header-left">
-          <a class="header-item" href="{{ site.github.url }}/">
-            Delight Front-end Framework
-          </a>
+          <span class="header-item">
+            <a href="/">Delight Front-end Framework</a>
+          </span>
+
         </div>
 
         <!-- Right side -->
         <div id="js-header-menu" class="header-right header-menu">
           <span class="header-item">
-            <a href="{{ "/about" | prepend: site.github.url }}">About</a>
+            <a href="/about">About</a>
           </span>
           <span class="header-item">
-            <a href="{{ "/our-work" | prepend: site.github.url }}">Our Work</a>
+            <a href="/our-work">Our Work</a>
           </span>
           <span class="header-item">
-            <a href="{{ "/contact" | prepend: site.github.url }}">Contact</a>
+            <a href="/contact">Contact</a>
           </span>
           <span class="header-item">
-            <a href="{{ "/contact" | prepend: site.github.url }}" class="button is-success">
+            <a href="/contact" class="button is-success">
               Start Your Project
             </a>
           </span>
@@ -52,13 +53,13 @@
     </header>
 
     <div class="columns wrapper">
-      <div class="column is-hal">
+      <div class="column is-half">
         First column
       </div>
       <div class="column">
         Second column
       </div>
-      <div class="column">
+      <div class="column is-third">
         Third column
       </div>
       <div class="column">

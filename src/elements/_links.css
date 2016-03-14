@@ -19,21 +19,20 @@ a {
 
 p > a,
 .link {
-  color: #0069c6;
+  color: var(--link);
   cursor: pointer;
   text-decoration: underline;
 
   &:visited {
-    font-size: 100px;
-    color: #0069c6;
+    color: var(--link);
   }
 
   &:hover {
-    color: #7FDBFF;
+    color: var(--link-hover);
   }
 
   &:focus,
   &:active {
-    color: #195284;
+    color: var(--link-active);
   }
 }

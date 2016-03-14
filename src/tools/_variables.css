@@ -36,6 +36,10 @@
 	--brand: var(--yellow);
 	--brand-secondary: var(--blue);
 
+	--link: #0069c6;
+	--link-hover: #7FDBFF;
+	--link-active: #195284;
+
 	/* Font-Family */
 	--body-font: "museo-sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	--header-font: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
@@ -52,6 +56,7 @@
 	--wrapper-width: 960px;
 	--column-gap: 24px;
 	--header-height: 72px;
+	--header-height-mobile: 50px;
 
 	/* Borders */
 	--border-width: 2px;
@@ -64,4 +69,12 @@
 	--tablet: 769px;
 	--desktop: 980px;
 	--widescreen: 1180px;
+
+	/* Z-indexes */
+	--z-1: 1;
+	--z-2: 2;
+	--z-3: 3;
+	--z-4: 4;
+	--z-5: 5;
+	--z-9: 9; /* use only in case of nuclear apocalypse */
 }

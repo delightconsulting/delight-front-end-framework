@@ -13,6 +13,7 @@ npm install && npm start
 ```
 delight-front-end-framework/
   ├── README.md
+  ├── favicon.ico
   ├── images
   │   ├── delight-logo-black.svg
   │   ├── delight-logo-white.svg
