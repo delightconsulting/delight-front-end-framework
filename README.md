@@ -1,6 +1,4 @@
-# Under Construction. Don’t believe this README, parts of it are lies.
-
-## delight-front-end-framework
+# delight-front-end-framework
 
 The front end framework used for Delight’s projects
 
@@ -11,26 +9,45 @@ To set up your dev environment run this at the root of the project
 npm install && npm start
 ```
 
-
 ### Directory structure
 ```
 delight-front-end-framework/
   ├── README.md
+  ├── images
+  │   ├── delight-logo-black.svg
+  │   ├── delight-logo-white.svg
+  │   └── texture-black.svg
   ├── css
   │   ├── delight.css
   │   └── delight.min.css
   ├── index.html
   ├── index.js
+  ├── LICENSE
   ├── package.json
   └── src
-      ├── _base.css
-      ├── _grid.css
-      ├── _media-queries.css
-      ├── _styles.css
-      ├── _typography.css
-      ├── _variables.css
-      ├── lib
-      │   └── _normalize.css
+      ├── base
+      │   ├── _global.css
+      │   ├── _print.css
+      │   ├── _reset.css
+      │   └── _type.css
+      ├── components
+      │   ├── _alerts.css
+      │   ├── _hero.css
+      │   └── _titles.css
+      ├── elements
+      │   ├── _buttons.css
+      │   ├── _forms.css
+      │   └── _links.css
+      ├── layout
+      │   ├── _footer.css
+      │   ├── _grid.css
+      │   ├── _header.css
+      │   ├── _section.css
+      │   └── _wrapper.css
+      ├── tools
+      │   ├── _helpers.css
+      |   ├── _media-queries.css
+      │   └── _variables.css
       └── delight.css
 
 ```
@@ -43,7 +60,7 @@ delight-front-end-framework/
 
 The MIT License (MIT)
 
-Copyright (c) 2015 @mrmrs
+Copyright (c) 2015 @delightconsulting
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
