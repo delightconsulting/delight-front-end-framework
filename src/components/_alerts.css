@@ -51,11 +51,16 @@
 	}
 }
 
+.alert.is-info {
+	border-left-color: var(--blue);
+}
+
 .alert.is-success {
 	border-left-color: var(--green);
 }
 
-.alert.is-warning {
+.alert.is-warning,
+.alert.is-error {
 	border-left-color: var(--yellow);
 }
 
