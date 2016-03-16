@@ -1,3 +1,78 @@
 /* ==========================================================================
    ALERTS
+
+   <div class="alert-container">
+   	<!-- "alert-container" anchors alerts to page, allows for multiple alerts to stack -->
+
+		<div class="alert is-success">
+			<p><strong>Alert Example</strong> This is an example of a basic alert.</p>
+			<a href="javascript:void(0);" class="close">⊗</a>
+		</div>
+
+		<div class="alert is-warning">
+			<p><strong>Alert Example</strong> This is an example of a basic alert.</p>
+			<a href="javascript:void(0);" class="close">⊗</a>
+		</div>
+
+   </div>
    ========================================================================== */
+
+
+.alert {
+	background: var(--lightest-gray);
+	background: #f7f7f7;
+	border: none;
+	border-left: 6px solid var(--blue);
+	border-radius: 0 var(--border-radius) var(--border-radius) 0;
+	box-shadow: 0 5px 8px -6px rgba(0, 0, 0, 0.42);
+	color: var(--black);
+	display: block;
+	align-items: center;
+	font-size: inherit;
+	margin-bottom: var(--size-md);
+	padding: var(--size-sm) 36px var(--size-sm) var(--size-sm);
+	transition: opacity var(--animation-speed) ease-out;
+	position: relative;
+}
+
+
+/* Alert positioning */
+.alert-container {
+	position: absolute;
+	top: calc( var(--header-height) + var(--size-md) );
+	left: var(--size-sm);
+	right: var(--size-sm);
+}
+
+@media (--breakpoint-medium-and-up) {
+	.alert-container {
+		left: auto;
+		right: var(--size-md);
+	}
+}
+
+.alert.is-success {
+	border-left-color: var(--green);
+}
+
+.alert.is-warning {
+	border-left-color: var(--yellow);
+}
+
+.alert.is-danger {
+	border-left-color: var(--red);
+}
+
+
+.alert > .close {
+	vertical-align: middle;
+	color: var(--dark-gray);
+	font-size: 150%;
+	position: absolute;
+	right: var(--size-sm);
+	top: 47.5%;
+	transform: translateY(-50%);
+	&:hover {
+		color: var(--darkest-gray);
+	}
+}

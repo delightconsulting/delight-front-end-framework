@@ -22,5 +22,6 @@
 @import "./layout/_section";
 @import "./layout/_wrapper";
 
+@import "./components/_alerts";
 @import "./components/_hero";
 @import "./components/_titles";
